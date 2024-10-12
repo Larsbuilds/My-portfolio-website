@@ -1,0 +1,178 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Header styling */
+header {
+    background-color: #212529;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #ddd;
+    letter-spacing: 1.5px;
+}
+
+/* Navigation bar styling */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #343a40;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #fff;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #495057;
+    border-radius: 5px;
+}
+
+/* Container for the main content */
+.container {
+    width: 85%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Section headings */
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    color: #343a40;
+    border-bottom: 2px solid #495057;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Styling for the Experience section */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project {
+    background-color: #fff;
+    padding: 20px;
+    margin: 15px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid #343a40;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project h3 {
+    font-size: 1.5em;
+    color: #212529;
+    margin-bottom: 15px;
+}
+
+.project p {
+    font-size: 0.9em;
+    color: #495057;
+}
+
+.project ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.project ul li {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    color: #212529;
+    line-height: 1.5;
+}
+
+/* Contact section */
+#contact p {
+    text-align: center;
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+#contact a {
+    color: #495057;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #343a40;
+}
+
+/* Footer styling */
+footer {
+    background-color: #212529;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 3px solid #343a40;
+}
+
+footer p {
+    font-size: 0.9em;
+    letter-spacing: 1.2px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    nav a {
+        padding: 12px 18px;
+    }
+}
